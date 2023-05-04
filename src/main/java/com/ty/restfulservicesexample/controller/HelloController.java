@@ -21,4 +21,9 @@ public class HelloController {
 		return "Hello World";
 	}
 
+	@GetMapping("/hello-world-bean")
+	public HelloWorldBean getMsgBean() {
+		return new HelloWorldBean("Hello World");
+	}
+
 }
